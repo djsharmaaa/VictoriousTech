@@ -2,6 +2,7 @@ const burgerMenu = document.getElementById('burger-menu');
 const navItems = document.getElementById('nav-items');
 const closeMenu = document.getElementById('close-menu');
 
+const dropdownLinks = document.querySelectorAll('.dropdown-link');
 
 
 
@@ -18,4 +19,17 @@ closeMenu.addEventListener('click', () => {
     navItems.classList.remove('active');
     closeMenu.style.display = 'none';
 });
+
+
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const dropdownContent = link.nextElementSibling;
+        dropdownContent.classList.toggle('active');
+        
+        
+   
+    });
+});
+
+
 
