@@ -70,7 +70,7 @@
         color: var(--blue-color);
       }
     
-      .close-menu {
+      /* .close-menu {
         display: none;
         position: relative;
         top: 0;
@@ -79,7 +79,7 @@
         color: var(--blue-color);
         z-index: 1100;
         cursor: pointer;
-      }
+      } */
     
     
       .logo{
@@ -184,7 +184,7 @@
     
       .dropdown-content li a {
         color: black;
-        padding: 5px 10px;
+        padding: 10px 10px;
         text-decoration: none;
         display: block;
       }
@@ -216,7 +216,7 @@
       {
         display: block;
     
-      } */
+      } 
     
       .right-nav{
     
@@ -1446,6 +1446,7 @@
       /* ------------------------ 1024x breakpoint  ------------------------------ */
 
   @media (max-width: 1024px) {
+   
     .nav-items {
       display: none;
       width: 100%;
@@ -1465,7 +1466,7 @@
       cursor: pointer;
   }
 
-  .close-menu .burger-menu.active {
+   .burger-menu.active {
       display: block;
       position: absolute;
       top: 20px;
@@ -1474,7 +1475,7 @@
 
   .logo {
       position: absolute;
-      left: 50%;
+      left: 43%;
       transform: translateX(-50%);
   }
 
@@ -1493,7 +1494,10 @@
       display: block;
   }
 
-  .right-nav {
+  .right-nav{
+    justify-content: center;
+  }
+  .right-nav a{
       display: none;
   }
 .dropdown a{
@@ -1657,7 +1661,7 @@
       cursor: pointer;
     }
   
-    .close-menu .burger-menu.active {
+     .burger-menu.active {
       display: block;
       position: absolute;
       top: 20px;
@@ -1666,7 +1670,7 @@
   
     .logo {
       position: absolute;
-      left: 50%;
+      left: 43%;
       transform: translateX(-50%);
     }
   
@@ -1683,8 +1687,11 @@
       display: block;
     }
   
-    .right-nav {
-      display: none;
+    .right-nav{
+      justify-content: center;
+    }
+    .right-nav a{
+        display: none;
     }
   
     .dropdown a {
@@ -1892,7 +1899,7 @@
       cursor: pointer;
     }
   
-    .close-menu .burger-menu.active {
+     .burger-menu.active {
       display: block;
       position: absolute;
       top: 20px;
@@ -1901,7 +1908,7 @@
   
     .logo {
       position: absolute;
-      left: 50%;
+      left: 43%;
       transform: translateX(-50%);
     }
   
@@ -1917,8 +1924,15 @@
     .nav-items.active + .logo {
       display: block;
     }
-  
-    .right-nav {
+    
+    .right-nav{
+      justify-content: center;
+      width: 22%;
+    }
+    .right-nav button{
+      font-size: 9px;
+    }
+    .right-nav a{
       display: none;
     }
   
